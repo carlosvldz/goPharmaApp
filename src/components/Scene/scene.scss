@@ -1,0 +1,332 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Mono);
+
+@mixin add-prefix-to-prop($property, $value) {
+
+  @each $prefix in '-webkit-',
+  '-moz-',
+  '' {
+    #{$prefix + $property}: #{$value};
+  }
+}
+
+@mixin add-prefix-to-value($property, $value) {
+
+  @each $prefix in '-webkit-',
+  '-moz-',
+  '' {
+    #{$property}: #{$prefix + $value};
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+
+  font-size: 62.5%;
+  font-family: 'PT Mono', monospace;
+}
+
+
+
+#power {
+  display: none;
+}
+
+.scene {
+
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  @include add-prefix-to-prop(transform-style, preserve-3d);
+}
+
+.ebook {
+  transform: scale(0.7);
+
+
+  &:hover {
+    & .power-button {
+      -webkit-animation: power 1s infinite;
+    }
+  }
+
+  & *:before,
+  & *:after {
+    position: absolute;
+    content: "";
+  }
+}
+
+.rotation {
+  @include add-prefix-to-prop(transform, rotateX(-6deg) rotateY(6deg) rotateZ(-2deg));
+}
+
+.sprite {
+  position: absolute;
+}
+
+.scrollbar {
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 1rem;
+  height: 33rem;
+  background: #b263e6;
+  box-shadow: 0 0 1rem #b263e6;
+}
+
+.scrollbar:before {
+  left: 0.2rem;
+  top: 0.3rem;
+  width: 0;
+  height: 0;
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  border-bottom: 0.6rem solid #282b23;
+}
+
+.scrollbar:after {
+  left: 0.2rem;
+  top: 32.1rem;
+  width: 0;
+  height: 0;
+  border-left: 0.3rem solid transparent;
+  border-right: 0.3rem solid transparent;
+  border-top: 0.6rem solid #282b23;
+}
+
+.frame>.sprite {
+  height: 1.2rem;
+  width: 26rem;
+  background: #4d4837;
+}
+
+.frame .sprite:nth-child(1) {
+  z-index: 9;
+  left: 1.2rem;
+  height: 2.5rem;
+  width: 6.8rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+  background: #3f3a2d;
+  box-shadow: inset -0.1rem 0.1rem 0.1rem 0 #b9a68e, 0 0.1rem 0.1rem 0 #111111;
+}
+
+.frame .sprite:nth-child(1):before {
+  width: 2.4rem;
+  height: 1.6rem;
+  left: 3.8rem;
+  top: 0.5rem;
+  border-radius: 0.3rem;
+  box-shadow: inset -0.1rem -0.1rem 0.1rem 0 #b9a68e, inset 0.1rem 0.1rem 0.1rem 0 #111111;
+}
+
+.frame .sprite:nth-child(1):after {
+  width: 2rem;
+  height: 1.2rem;
+  left: 4rem;
+  top: 0.7rem;
+  border-radius: 0.3rem;
+  box-shadow: inset -0.1rem -0.1rem 0.1rem 0 #111111, inset 0.1rem 0.1rem 0.1rem 0 #b9a68e;
+}
+
+.frame .sprite:nth-child(2) {
+  z-index: 1;
+  left: 7.4rem;
+  top: 1.2rem;
+  height: 1rem;
+  width: 23.8rem;
+  border-radius: 0 1rem 0 0;
+  box-shadow: inset 0 0.1rem 0.1rem 0 #b9a68e, 0 0.1rem 0.1rem 0 #111111;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0.4rem;
+    top: 0.8rem;
+    width: 1rem;
+    height: 0.3rem;
+    background: #4d4837;
+  }
+}
+
+.frame .sprite:nth-child(3) {
+  z-index: 2;
+  left: 30.7rem;
+  top: 2rem;
+  height: 36.8rem;
+  width: 0.6rem;
+  box-shadow: -0.5rem 0 0 0 #4d4837, 0.1rem 0 0 0 #111111;
+}
+
+.frame .sprite:nth-child(4) {
+  z-index: 1;
+  left: 7.4rem;
+  top: 38.6rem;
+  height: 1rem;
+  width: 23.8rem;
+  box-shadow: inset 0 0 0.1rem 0 #b9a68e, 0.2rem 0.2rem 0.2rem 0 #111111;
+  border-radius: 0 0 1rem 0;
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0.4rem;
+    bottom: 0.8rem;
+    width: 1rem;
+    height: 0.3rem;
+    background: #4d4837;
+  }
+}
+
+.frame .sprite:nth-child(5) {
+  z-index: 9;
+  left: 1.2rem;
+  top: 38.1rem;
+  height: 2.5rem;
+  width: 6.8rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+  box-shadow: inset -0.1rem 0 0.1rem 0 #b9a68e, 0 0.2rem 0.1rem 0 #111111, 0 -0.1rem 0.1rem 0 #111111;
+}
+
+.frame .sprite:nth-child(5):before {
+  width: 2.4rem;
+  height: 1.6rem;
+  left: 3.8rem;
+  top: 0.5rem;
+  border-radius: 0.3rem;
+  box-shadow: inset -0.1rem -0.1rem 0.1rem 0 #b9a68e, inset 0.1rem 0.1rem 0.1rem 0 #111111;
+}
+
+.frame .sprite:nth-child(5):after {
+  width: 2rem;
+  height: 1.2rem;
+  left: 4rem;
+  top: 0.7rem;
+  border-radius: 0.3rem;
+  box-shadow: inset -0.1rem -0.1rem 0.1rem 0 #111111, inset 0.1rem 0.1rem 0.1rem 0 #b9a68e;
+}
+
+.frame .sprite:nth-child(6) {
+  z-index: 9;
+  left: 1.2rem;
+  top: 2.3rem;
+  height: 35.9rem;
+  width: 3.8rem;
+
+  @include add-prefix-to-value(background, linear-gradient(45deg, #4d4837 0%, #3f3a2d 100%));
+  box-shadow: none;
+}
+
+.frame .sprite:nth-child(7) {
+  z-index: 9;
+  left: 0;
+  height: 18rem;
+  width: 1.2rem;
+  border-radius: 0.4rem 0 0 0;
+  @include add-prefix-to-value(background, linear-gradient(45deg, #4d4837 0%, #3f3a2d 50%));
+  box-shadow: inset 0.1rem 0.1rem 0 0 #b9a68e, inset -0.1rem 0 0.6rem 0 #695e4f;
+}
+
+.frame .sprite:nth-child(8) {
+  z-index: 9;
+  left: 0;
+  top: 22.6rem;
+  height: 18rem;
+  width: 1.2rem;
+  border-radius: 0 0 0 0.4rem;
+  box-shadow: inset 0.1rem 0 0.1rem 0 #b9a68e, inset -0.1rem 0 0.6rem 0 #695e4f;
+}
+
+.decoration .power-button {
+  z-index: 10;
+  left: 0.2rem;
+  top: 18rem;
+  height: 4.6rem;
+  width: 1.4rem;
+  cursor: pointer;
+}
+
+.decoration #power+.power-button {
+  background: #bdbdbd;
+  box-shadow: inset 0 0.1rem 0.1rem 0 #111111, inset -0.1rem -0.1rem 0 0 #b9a68e;
+}
+
+.decoration #power:checked+.power-button {
+  background: #d276fd;
+  box-shadow: 0 0 1.4rem 0 #e676fd, inset 0 0.1rem 0.1rem 0 #111111, inset -0.1rem -0.1rem 0 0 #b9a68e;
+}
+
+.decoration .screen {
+  z-index: 0;
+  top: 2.3rem;
+  left: 4.5rem;
+  width: 25.6rem;
+  height: 36.2rem;
+  padding: 1.4rem 1.4rem 1.4rem 4rem;
+  @include add-prefix-to-prop(box-sizing, border-box);
+  border-radius: 0.5rem;
+  color: #b263e6;
+  text-shadow: 0 0 1rem #b263e6;
+  background: linear-gradient(45deg, rgba(183, 173, 112, 0.04) 0%, rgba(34, 34, 34, 0.04) 35%, rgba(183, 173, 112, 0.05) 54%, rgba(34, 34, 34, 0.04) 79%, rgba(183, 173, 112, 0.07) 100%);
+  box-shadow: 0 0 0 0.5rem #4d4837;
+
+  & * {
+    opacity: 0;
+  }
+
+  & p {
+    position: relative;
+    margin-bottom: 1.5em;
+    line-height: 1.5em;
+    font-size: 1.2rem;
+  }
+
+  &:after {
+    left: 0.5rem;
+    top: 0;
+    width: 0.1rem;
+    height: 36rem;
+    background: #111111;
+    box-shadow: 0 0 0.1rem 0 #111111;
+  }
+}
+
+.decoration #power:checked~.screen {
+  box-shadow: inset 0 0 2rem 0.1rem #b263e6, 0 0 0 0.5rem #4d4837;
+
+  &:after {
+    background: #b263e6;
+    box-shadow: none;
+  }
+
+  & * {
+    opacity: 1;
+    @include add-prefix-to-prop(transition, all 0.8s ease);
+  }
+}
+
+.decoration .handle {
+  z-index: 9;
+  top: 2.6rem;
+  left: 2.4rem;
+  height: 35.6rem;
+  width: 1.8rem;
+  @include add-prefix-to-value(background, linear-gradient(left, #b9a68e 0%, #665c4e 50%, #665c4e 74%, #b9a68e 100%));
+  border-radius: 0.3rem;
+  box-shadow: 0.2rem 0.2rem 1rem 0 rgba(0, 0, 0, 0.4);
+}
+
+.decoration .logo {
+  z-index: 9;
+  top: 0.6rem;
+  left: 2.4rem;
+  height: 0;
+  width: 0;
+  box-shadow: 1.2rem 0.6rem 0 0.4rem #111111, 0.6rem 0.2rem 0 0.2rem #111111, 0.2rem 0.2rem 0 0.2rem #111111, 0.2rem 1rem 0 0.2rem #111111, 0.6rem 1.4rem 0 0.2rem #111111, 1rem 1.4rem 0 0.2rem #111111, 1.4rem 1.4rem 0 0.2rem #111111;
+}
