@@ -14,160 +14,174 @@ import { Autoplay, Grid, Pagination, Navigation } from 'swiper'
 const partners = [
   {
     id: 1,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2Fabbot-mex.png?alt=media&token=ac4e6a03-b7a0-4067-b419-de0ca8723a94',
-    name: 'Abbott'
+    name: 'Abbott',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fabbott%2Fa_sig_horiz_1c_w_113px-01.png?alt=media&token=770b19fd-e180-4320-9cc5-65d3056f7432',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fabbott%2Fa_sig_horiz_1c_w_113px-01.png?alt=media&token=770b19fd-e180-4320-9cc5-65d3056f7432'
   },
   {
     id: 2,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FABBVIE-LOGO.png?alt=media&token=d9821bfe-b80f-4e5c-98f4-0f1b2937172f',
-    name: 'Abbie'
+    name: 'Abbvie',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fabbvie%2Flogo.svg?alt=media&token=eda626f1-8cd4-4566-ad42-77b4f7d652fa',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fabbvie%2Flogo.svg?alt=media&token=eda626f1-8cd4-4566-ad42-77b4f7d652fa'
   },
   {
     id: 3,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FAga.png?alt=media&token=69c3a960-36e2-4db8-ad53-90c940b34a05',
-    name: 'Aga'
+    name: 'Allergan',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fallergan%2Flogo-black.svg?alt=media&token=af2f66c4-210b-4ea6-a9dc-27d51c81ec37',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fallergan%2Flogo-black.svg?alt=media&token=af2f66c4-210b-4ea6-a9dc-27d51c81ec37'
   },
   {
     id: 4,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FAllergan.png?alt=media&token=4f99769b-1013-4610-8705-2d919391aa63',
-    name: 'Allergan'
+    name: 'Armstrong',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Farmstrong%2Flogo-blanco.svg?alt=media&token=313552d7-2fb1-4119-87cc-10998452d9a7',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Farmstrong%2Flogo-blanco.svg?alt=media&token=313552d7-2fb1-4119-87cc-10998452d9a7'
   },
   {
     id: 5,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2Fasofarma-seeklogo.com.png?alt=media&token=1f7520b7-b8b4-4e7d-88c7-809c40e25493',
-    name: 'Asofarma'
+    name: 'Asofarma',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fasofarma%2Flogo-asofarma-mexico-blanco.svg?alt=media&token=7a43cf3f-5a8f-4652-a14d-b9ddc28a357d',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fasofarma%2Flogo-asofarma-mexico-blanco.svg?alt=media&token=7a43cf3f-5a8f-4652-a14d-b9ddc28a357d'
   },
   {
     id: 6,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2Fastra_zeneca_logo.png?alt=media&token=b1be33ad-dceb-4759-a5f8-4ac2a4bcb29d',
-    name: 'Aztra'
+    name: 'Astra Zeneca',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fastrazeneca%2Flogo-az-white.png?alt=media&token=05343593-0468-4ad4-b509-d23470bacf8c',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fastrazeneca%2Flogo-az-white.png?alt=media&token=05343593-0468-4ad4-b509-d23470bacf8c'
   },
   {
     id: 7,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FLOGO_BAXTER.png?alt=media&token=3d75a734-9077-4e01-8f72-4109f6abd9af',
-    name: 'Baxter'
+    name: 'Baxter',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fbaxter%2F320px-Baxter.svg.png?alt=media&token=fa39d26a-0bc2-48f5-8c58-2f5f361821bc',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fbaxter%2F320px-Baxter.svg.png?alt=media&token=fa39d26a-0bc2-48f5-8c58-2f5f361821bc'
   },
   {
     id: 8,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FBiogen-Logo.png?alt=media&token=1a714229-1bd1-4b97-b3ce-e80e681665f0',
-    name: 'Biogen'
+    name: 'Biogen',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fbiogen%2Fbiogen-logo-refresh-new.svg?alt=media&token=6295789d-1e96-4bef-b264-8dd81e8eb201',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fbiogen%2Fbiogen-logo-refresh-new.svg?alt=media&token=6295789d-1e96-4bef-b264-8dd81e8eb201'
   },
   {
     id: 9,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2Flogo_new_biomarin.png?alt=media&token=66548550-c227-4fac-8034-10688b2691e2',
-    name: 'Biomarin'
+    name: 'Biomarin',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fbiomarin%2Fbiomarin-wht.svg?alt=media&token=9b646767-fcc5-42e6-9e61-5f91eb84ce5f',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fbiomarin%2Fbiomarin-wht.svg?alt=media&token=9b646767-fcc5-42e6-9e61-5f91eb84ce5f'
   },
   {
     id: 10,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2Fbio-products-laboratory-bpl.png?alt=media&token=2f33b60f-3b03-4b30-befd-84d471f7d7db',
-    name: 'Bpl'
+    name: 'BPL',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fbpl%2Fbio-products-laboratory-bpl-logo-4494A0F799-seeklogo.com.png?alt=media&token=14c86480-447a-44ab-a17e-b3021b8b93f8',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fbpl%2Fbio-products-laboratory-bpl-logo-4494A0F799-seeklogo.com.png?alt=media&token=14c86480-447a-44ab-a17e-b3021b8b93f8'
   },
   {
     id: 11,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FLogoCHIESIRD.png?alt=media&token=0628e1cf-2eec-4e60-b60b-d6809f30896b',
-    name: 'Chiesi'
+    name: 'Chiesi',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fchiesi%2Fchiesi-farmaceutici-s-p-a-logo-388781ECC6-seeklogo.com.png?alt=media&token=9d059152-523a-4af7-988f-18f5d6e10530',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fchiesi%2Fchiesi-farmaceutici-s-p-a-logo-388781ECC6-seeklogo.com.png?alt=media&token=9d059152-523a-4af7-988f-18f5d6e10530'
   },
   {
     id: 12,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FCoiner.png?alt=media&token=2053bacd-985c-471a-9715-4573d6164e9d',
-    name: 'Coiner'
+    name: 'Churchdwight',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fchurchdwight%2FlogoChD.png?alt=media&token=327d0480-7d51-4b37-bd5f-280809b374c6',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fchurchdwight%2FlogoChD.png?alt=media&token=327d0480-7d51-4b37-bd5f-280809b374c6'
   },
   {
     id: 12.2,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/CSL%20Behring.webp?alt=media&token=669ff026-f421-48a9-b882-9ae16ff8b5df',
-    name: 'CSL Behring'
+    name: 'CSL Behin',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2FcslBehin%2Fcsl-behring-2022.png?alt=media&token=45568fea-dce9-44d7-89e1-2e3f5329bbfd',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2FcslBehin%2Fcsl-behring-2022.png?alt=media&token=45568fea-dce9-44d7-89e1-2e3f5329bbfd'
   },
   {
     id: 13,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FEisai_logo.png?alt=media&token=ff3a711f-2eeb-4dac-9a62-3784637e0286',
-    name: 'Eisai'
+    name: 'Eisai',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Feisai%2Flogo.png?alt=media&token=f45f33f8-2a26-45cb-8155-5617284264fd',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Feisai%2Flogo.png?alt=media&token=f45f33f8-2a26-45cb-8155-5617284264fd'
   },
   {
     id: 14,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FgrupoVal.svg?alt=media&token=af234288-29b7-4692-93f3-72c05e8cd25d',
-    name: 'Grupo Val'
+    name: 'Farmapiel',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Ffarmapiel%2Flogo-2023022311240926100.webp?alt=media&token=8d37e506-eaf6-4314-971b-c1b03ee6c22c',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Ffarmapiel%2Flogo-2023022311240926100.webp?alt=media&token=8d37e506-eaf6-4314-971b-c1b03ee6c22c'
   },
   {
     id: 15,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FLogo-with-claim-blue.png?alt=media&token=28feaab9-2a2a-41d1-9661-a53ed2f08e49',
-    name: 'Igenomix'
+    name: 'Ipsen',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fipsen%2FLogo_IPSEN.svg?alt=media&token=f3a835a8-9876-4a16-aa00-23efb0a47476',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fipsen%2FLogo_IPSEN.svg?alt=media&token=f3a835a8-9876-4a16-aa00-23efb0a47476'
   },
   {
     id: 16,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2Fjanssen.png?alt=media&token=b94f7df7-d2aa-4c95-9d5e-02426f51a1bd',
-    name: 'Janssen'
-  },
-  {
-    id: 17.1,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2Fmmgroup.svg?alt=media&token=56aaec8a-4752-45cb-b2eb-8436b3d8b317',
-    name: 'Markeing and Media'
+    name: 'Janssen',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fjanssen%2Flogo.png?alt=media&token=6e541812-9488-43f1-853b-1c3d0177cb8d',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fjanssen%2Flogo.png?alt=media&token=6e541812-9488-43f1-853b-1c3d0177cb8d'
   },
   {
     id: 17,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FNovartis.png?alt=media&token=15b974ec-5fe1-4e1a-b842-3b228db575fc',
-    name: 'Novartis'
+    name: 'Moksha8',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fmoksha8%2Fmoksha8.png?alt=media&token=9945b8c0-39e6-47a8-9d1b-790c1a8a9d77',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fmoksha8%2Fmoksha8.png?alt=media&token=9945b8c0-39e6-47a8-9d1b-790c1a8a9d77'
   },
   {
     id: 18,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FOmer.png?alt=media&token=ccbed7f3-b183-4d90-b209-74d3a08d12c3',
-    name: 'Omer'
+    name: 'Novartis',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fnovartis%2Flogo.svg?alt=media&token=da5aec69-3787-4633-aeb9-729e99e52b4a',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fnovartis%2Flogo.svg?alt=media&token=da5aec69-3787-4633-aeb9-729e99e52b4a'
   },
   {
     id: 19,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FROCHE_LOGO.png?alt=media&token=931d2ec8-1d7b-4ca7-a454-ce75d74de904',
-    name: 'Roche'
+    name: 'PTC',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fptc%2FPTC_logo_footer.png?alt=media&token=c28696f4-49bb-43cc-b6fc-08299f02ede9',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fptc%2FPTC_logo_footer.png?alt=media&token=c28696f4-49bb-43cc-b6fc-08299f02ede9'
   },
   {
     id: 20,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2Fsanofi_nuevo.png?alt=media&token=ffdbc77c-c9cd-4f09-af71-42fe34736e4c',
-    name: 'Sanofi'
+    name: 'Recordati',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Frecordati%2FRecordati.svg?alt=media&token=7bfe57db-980d-4fa1-80c0-5321b7dd08fd',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Frecordati%2FRecordati.svg?alt=media&token=7bfe57db-980d-4fa1-80c0-5321b7dd08fd'
   },
   {
     id: 21,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FLogotipo-SEER_AZUL_GO_PHARMA.png?alt=media&token=e924a284-e43b-411a-abbc-76b1476e34d9',
-    name: 'Seer'
+    name: 'Roche',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Froche%2Froche-logo.png?alt=media&token=cef8b9b0-506f-4db3-9c00-9d938d55d78c',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Froche%2Froche-logo.png?alt=media&token=cef8b9b0-506f-4db3-9c00-9d938d55d78c'
   },
   {
     id: 22,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FSKINDER_LOGOR.png?alt=media&token=2162dc1c-4c61-4ef4-906a-7762cef4e7fa',
-    name: 'Skinder'
+    name: 'Sanofi',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fsanofi%2Fsanofi-logo-2-dark.png?alt=media&token=f0a5b3a8-9e9a-4c7e-8b7f-cf852787592c',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fsanofi%2Fsanofi-logo-2-dark.png?alt=media&token=f0a5b3a8-9e9a-4c7e-8b7f-cf852787592c'
   },
   {
     id: 23,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2Fsophia.png?alt=media&token=f8e3e01d-22d7-4584-b7db-9a20f45c7ec5',
-    name: 'Sophia'
+    name: 'Sophia',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fsophia%2Flogo_v2-white.svg?alt=media&token=3cdf3615-f300-4dcd-95c4-5b7e8bd09342',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fsophia%2Flogo_v2-white.svg?alt=media&token=3cdf3615-f300-4dcd-95c4-5b7e8bd09342'
   },
   {
     id: 24,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2Fsparks.svg?alt=media&token=20569758-d72f-44a9-80be-d43a5c73a343',
-    name: 'Sparks'
+    name: 'Takeda',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Ftakeda%2Fta5253t3d5-takeda-logo-takeda-logo-medicine--com.png?alt=media&token=dd4e1e0e-6cca-4599-97cd-57d294ef77f3',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Ftakeda%2Fta5253t3d5-takeda-logo-takeda-logo-medicine--com.png?alt=media&token=dd4e1e0e-6cca-4599-97cd-57d294ef77f3'
   },
   {
     id: 25,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FTakeda.png?alt=media&token=39f1dada-193d-4865-bf52-1ecbf50f36ef',
-    name: 'Takeda'
+    name: 'Teva',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fteva%2Fteva-logo2%20copy.png?alt=media&token=c76e579a-e7dd-47cb-891d-ef4c7afca161',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fteva%2Fteva-logo2%20copy.png?alt=media&token=c76e579a-e7dd-47cb-891d-ef4c7afca161'
   },
   {
     id: 26,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FLogoTeva_RGB.png?alt=media&token=ba247ea3-69c2-4582-90f6-d24923845bf2',
-    name: 'Teva'
+    name: 'Ultragenix',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fultragenix%2Flogo_89fae9fb09e515049539530da9a6fd66_1x.png?alt=media&token=78727788-95cc-4201-8651-cf74b7b579bc',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fultragenix%2Flogo_89fae9fb09e515049539530da9a6fd66_1x.png?alt=media&token=78727788-95cc-4201-8651-cf74b7b579bc'
   },
   {
     id: 27,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FUltraMedic.png?alt=media&token=0142c9a0-e53d-42cc-9469-990291ba046f',
-    name: 'Ultra Medic'
-  },
-  {
-    id: 28,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FultragenyxPH-.png?alt=media&token=247be36e-c771-444e-a31b-3aaa67c78eed',
-    name: 'Ultragenyx'
-  },
-  {
-    id: 29,
-    img: 'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/werfen.svg?alt=media&token=85272827-cfe1-4c90-ae85-e7e7fbe8575f',
-    name: 'Ultragenyx'
+    name: 'Ultramedic',
+    img: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fultramedic%2Fultragenyx-footer-logo.png?alt=media&token=9a080be5-ae04-4228-be02-ac36dfe7d234',
+    bucketLink: 'https://firebasestorage.googleapis.com/v0/b/gopharmaapp-461d6.appspot.com/o/assets%2Flogos%2Fultramedic%2Fultragenyx-footer-logo.png?alt=media&token=9a080be5-ae04-4228-be02-ac36dfe7d234'
   }
 ]
+
 export default function Socios () {
   return (
     <>

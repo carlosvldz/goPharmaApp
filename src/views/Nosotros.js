@@ -1,7 +1,7 @@
 import React from 'react'
 import 'aos/dist/aos.css' // You can also use <link> for styles
 import Socios from '../views/Socios'
-import Team from '../components/Team'
+// import Team from '../components/Team'
 import Filosofia from '../components/Filosofia'
 import { FormattedMessage } from 'react-intl'
 
@@ -149,7 +149,7 @@ function Nosotros () {
         </div>
       </section>
       <Filosofia />
-      <Team />
+
       <Socios />
     </>
   )

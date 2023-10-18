@@ -6,8 +6,9 @@ import { FormattedMessage } from 'react-intl'
 import { LangContext } from '../context/LangContext.js'
 // import Logo from "../../img/logo.png";
 import AOS from 'aos'
+import Logo from '../img/logo-responsive.svg'
 import 'aos/dist/aos.css' // You can also use <link> for styles
-import emoji from 'react-easy-emoji'
+
 function Navbar () {
   const [click, setClick] = useState(false)
   const idioma = useContext(LangContext)
@@ -45,8 +46,6 @@ function Navbar () {
     })
   }, [])
 
-  const Logo =
-    'https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/gopharma.png?alt=media&token=f4a41dfa-8d31-4f37-9a9c-c8f4d76e30f2'
   return (
     <nav id='navScr' className='navbar ' data-aos='fade-in'>
       <NavLink
@@ -115,13 +114,13 @@ function Navbar () {
             <FaIcons.FaLinkedin />
           </li>
         </ExternalLink>
-        <div className='contenedor-botones-lang'>
-          <li onClick={() => idioma.establecerLenguaje('es')}>{emoji('🇲🇽')}</li>
+        <ul className='contenedor-botones-lang'>
+          <li onClick={() => idioma.establecerLenguaje('es')}>🇲🇽</li>
           <span>/</span>
           <li onClick={() => idioma.establecerLenguaje('en')}>
-            {emoji('🇺🇸 ')}
+          🇺🇸
           </li>
-        </div>
+        </ul>
       </ul>
       <div className='navbar-icon' onClick={handleClick}>
         {click ? <FaIcons.FaTimes /> : <FaIcons.FaBars />}

@@ -101,8 +101,7 @@ body {
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
-  background: url('https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/background-go-pharma.png?alt=media&token=fb6d7e0c-c87a-4695-844f-d580915bef8c')
-    no-repeat center center;
+  background: url('../img/background-go-pharma.png') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -243,7 +242,7 @@ span {
 
 .sociost {
   margin-top: 15vh;
-  background-color: white;
+  background-color: #dfc7fc;
   height: auto;
   max-height: 60vh;
   display: flex;
@@ -265,7 +264,7 @@ span {
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: rgb(255, 255, 255);
+    background: transparent;
     height: calc((100% - 30px) / 2) !important;
 
     /* Center slide text vertically */
@@ -1352,6 +1351,7 @@ ul {
 
 .contenedor-botones-lang {
   display: flex;
+  list-style: none;
   li {
     color: #d591fd;
     padding: 0 0.3rem;
