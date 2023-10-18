@@ -181,7 +181,7 @@ const Footer = () => {
       <div className='minifooter'>
         <small>
           Copyright© Marketing and Media Go Pharma® <br />
-          All rights reserved 2022.
+          All rights reserved 2023.
         </small>
       </div>
     </>
